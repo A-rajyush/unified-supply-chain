@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #ffffff;
+    color: #0f172a;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* -------------------------------------------------------------
+   LIGHT THEME (WHITE BACKGROUND DEFAULT) STYLES
+   Ensures pristine enterprise white canvas with crisp contrast
+---------------------------------------------------------------- */
+
+body.theme-light,
+.theme-light {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+/* Outer layout backgrounds */
+.theme-light main,
+.theme-light .app-wrapper {
+  background-color: #f8fafc;
+}
+
+/* Card surfaces */
+.theme-light .bg-slate-950,
+.theme-light .bg-slate-900 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+.theme-light .bg-slate-950\/60,
+.theme-light .bg-slate-950\/70,
+.theme-light .bg-slate-950\/80,
+.theme-light .bg-slate-950\/90,
+.theme-light .bg-slate-900\/60,
+.theme-light .bg-slate-900\/70,
+.theme-light .bg-slate-900\/80,
+.theme-light .bg-slate-900\/90,
+.theme-light .bg-slate-900\/95,
+.theme-light .bg-slate-950\/95 {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Sub-panels, code blocks, and nested boxes */
+.theme-light .bg-slate-950\/40,
+.theme-light .bg-slate-950\/50,
+.theme-light .bg-slate-900\/40,
+.theme-light .bg-slate-900\/50,
+.theme-light .bg-slate-800\/80,
+.theme-light .bg-slate-800\/60,
+.theme-light .bg-slate-800 {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+/* Borders */
+.theme-light .border-slate-800,
+.theme-light .border-slate-800\/80,
+.theme-light .border-slate-700,
+.theme-light .border-slate-700\/80,
+.theme-light .divide-slate-800 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Typography contrast */
+.theme-light .text-white,
+.theme-light .text-slate-100 {
+  color: #0f172a !important;
+}
+
+.theme-light .text-slate-200,
+.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+.theme-light .text-slate-400 {
+  color: #64748b !important;
+}
+
+.theme-light .text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Accents with enhanced readability on white */
+.theme-light .text-cyan-400,
+.theme-light .text-cyan-300 {
+  color: #0284c7 !important;
+}
+
+.theme-light .text-emerald-400,
+.theme-light .text-emerald-300 {
+  color: #059669 !important;
+}
+
+.theme-light .text-amber-400,
+.theme-light .text-amber-300 {
+  color: #d97706 !important;
+}
+
+.theme-light .text-rose-400,
+.theme-light .text-rose-300 {
+  color: #e11d48 !important;
+}
+
+.theme-light .text-indigo-400,
+.theme-light .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+
+.theme-light .text-purple-400,
+.theme-light .text-purple-300 {
+  color: #7c3aed !important;
+}
+
+/* Badge and pill backgrounds */
+.theme-light .bg-cyan-500\/10,
+.theme-light .bg-cyan-500\/20,
+.theme-light .bg-cyan-950 {
+  background-color: #f0f9ff !important;
+  color: #0369a1 !important;
+  border-color: #bae6fd !important;
+}
+
+.theme-light .bg-emerald-500\/10,
+.theme-light .bg-emerald-500\/20,
+.theme-light .bg-emerald-950,
+.theme-light .bg-emerald-950\/40,
+.theme-light .bg-emerald-950\/50 {
+  background-color: #ecfdf5 !important;
+  color: #047857 !important;
+  border-color: #a7f3d0 !important;
+}
+
+.theme-light .bg-amber-500\/10,
+.theme-light .bg-amber-500\/20,
+.theme-light .bg-amber-950,
+.theme-light .bg-amber-950\/40 {
+  background-color: #fffbeb !important;
+  color: #b45309 !important;
+  border-color: #fde68a !important;
+}
+
+.theme-light .bg-rose-500\/10,
+.theme-light .bg-rose-500\/20,
+.theme-light .bg-rose-950,
+.theme-light .bg-rose-950\/40,
+.theme-light .bg-rose-950\/50 {
+  background-color: #fff1f2 !important;
+  color: #be123c !important;
+  border-color: #fecdd3 !important;
+}
+
+.theme-light .bg-indigo-500\/10,
+.theme-light .bg-indigo-500\/20,
+.theme-light .bg-indigo-950 {
+  background-color: #eef2ff !important;
+  color: #4338ca !important;
+  border-color: #c7d2fe !important;
+}
+
+.theme-light .bg-purple-500\/10,
+.theme-light .bg-purple-500\/20,
+.theme-light .bg-purple-950 {
+  background-color: #faf5ff !important;
+  color: #6b21a8 !important;
+  border-color: #e9d5ff !important;
+}
+
+/* Inputs and Forms */
+.theme-light input,
+.theme-light textarea,
+.theme-light select {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+.theme-light input::placeholder,
+.theme-light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Gradients */
+.theme-light .from-slate-950,
+.theme-light .via-slate-900,
+.theme-light .to-slate-950,
+.theme-light .via-cyan-950\/40 {
+  --tw-gradient-from: #ffffff !important;
+  --tw-gradient-to: #f8fafc !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #ffffff, var(--tw-gradient-to) !important;
+}
+
+/* Buttons with text-slate-950 retain dark bold text on bright buttons */
+.theme-light button.bg-cyan-500,
+.theme-light button.bg-emerald-500,
+.theme-light button.bg-amber-500 {
+  color: #020617 !important;
+}
+
+/* Interactive Map in light mode */
+.theme-light .map-canvas-bg {
+  background-color: #f0fdf4 !important;
+}
+
+/* Custom scrollbars in light mode */
+.theme-light ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.theme-light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+.theme-light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Standard scrollbar defaults */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.8);
+}

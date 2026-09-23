@@ -1,0 +1,8 @@
+{
+  "name": "Unified Supply Chain Ontology & Governed Analytics",
+  "description": "Enterprise governed semantic layer and conversational analytics unifying ERP, logistics, supplier EDI, and IoT telematics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
